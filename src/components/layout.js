@@ -1,7 +1,9 @@
 import React from 'react'
 import './base.css'
+import { Helmet } from 'react-helmet'
 import Container from './container'
 import Navigation from './navigation'
+import Hero from './hero'
 
 class Template extends React.Component {
   render() {
@@ -9,6 +11,8 @@ class Template extends React.Component {
 
     return (
       <Container>
+        <Helmet title="අනීවාරතේ" />    
+        <Hero/>
         <Navigation />
         {children}
       </Container>
